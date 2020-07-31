@@ -1,0 +1,216 @@
+I have taken 3 inputs to check the desire output and if the dataset is linear or not.
+
+Here I have taken the example of passing grades of physics, chemistry, maths.
+And it follows the AND gate function 
+
+Column(physics)- indicates if the student has passed in the physics exam (if yes then value is 1 if no then value is 0 )
+Column(maths)- indicates if the student has passed in the physics exam (if yes then value is 1 if no then value is 0 )  
+Column(chemistry)- indicates if the student has passed in the physics exam (if yes then value is 1 if no then value is 0 )
+And if all the columns indicates (1,1,1) then the student is passed.
+physics	 maths	chemistry 
+     0	     0	      0	
+     0	     0	      1 
+     0	     1	      0
+     0	     1	      1
+     1	     0	      0
+     1	     0	      1
+     1	     1	      0
+     1	     1	      1
+
+
+output :
+
+
+iteration= 0
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+bias 0.0
+weights [0. 0. 0.]
+
+iteration= 1
+bias 10.0
+weights [10. 10. 10.]
+bias 0.0
+weights [10. 10. 10.]
+bias -10.0
+weights [10. 10.  0.]
+bias -10.0
+weights [10. 10.  0.]
+bias -10.0
+weights [10. 10.  0.]
+bias -10.0
+weights [10. 10.  0.]
+bias -10.0
+weights [10. 10.  0.]
+bias -20.0
+weights [0. 0. 0.]
+
+iteration= 2
+bias -10.0
+weights [10. 10. 10.]
+bias -10.0
+weights [10. 10. 10.]
+bias -10.0
+weights [10. 10. 10.]
+bias -10.0
+weights [10. 10. 10.]
+bias -20.0
+weights [10.  0.  0.]
+bias -20.0
+weights [10.  0.  0.]
+bias -20.0
+weights [10.  0.  0.]
+bias -20.0
+weights [10.  0.  0.]
+
+iteration= 3
+bias -10.0
+weights [20. 10. 10.]
+bias -10.0
+weights [20. 10. 10.]
+bias -10.0
+weights [20. 10. 10.]
+bias -10.0
+weights [20. 10. 10.]
+bias -20.0
+weights [20.  0.  0.]
+bias -20.0
+weights [20.  0.  0.]
+bias -20.0
+weights [20.  0.  0.]
+bias -20.0
+weights [20.  0.  0.]
+
+iteration= 4
+bias -10.0
+weights [30. 10. 10.]
+bias -10.0
+weights [30. 10. 10.]
+bias -10.0
+weights [30. 10. 10.]
+bias -10.0
+weights [30. 10. 10.]
+bias -20.0
+weights [30.  0.  0.]
+bias -30.0
+weights [20.  0.  0.]
+bias -30.0
+weights [20.  0.  0.]
+bias -30.0
+weights [20.  0.  0.]
+
+iteration= 5
+bias -20.0
+weights [30. 10. 10.]
+bias -20.0
+weights [30. 10. 10.]
+bias -20.0
+weights [30. 10. 10.]
+bias -20.0
+weights [30. 10. 10.]
+bias -20.0
+weights [30. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+
+iteration= 6
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+
+iteration= 7
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+
+iteration= 8
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+
+iteration= 9
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+bias -30.0
+weights [20. 10. 10.]
+
+perdiction for [1,0,1]= 0     #actual output 0
+perdiction for [0,0,1]= 0    #actual output 0	
+perdiction for [1,1,1]= 1       #actual output 1
+
+
+Conclusion:
+
+I have taken threshold as 10 and learning rate as 10.
+Here the values of weight and bias goes stable after iteration 6,
+so minimum epoch for desired output is 6.
+And this satisfies that my dataset is linearly separable as we are getting desired output in single perceptron.
+
+
